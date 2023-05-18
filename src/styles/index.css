@@ -1,0 +1,13 @@
+#homePage {
+  height: 100vh;
+}
+#homePageMenu {
+  position: relative;
+  top: -50vw;
+}
+
+.neon-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(1, 1, 1, 0);
+}

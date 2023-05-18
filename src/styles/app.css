@@ -2,26 +2,84 @@ body {
   margin: 0px;
 }
 
-#backgroundSolidColor {
-  background-image: url("../../public/images/staticImages/backgroundSolidColor.png");
-  position: absolute;
-  width: 100%;
+.background {
   height: 100%;
 }
+.backgroundSolidColor {
+  background-image: url("../../public/images/staticImages/backgroundSolidColor.png");
 
-#backgroundBriks {
+  position: relative;
+
+  top: 0px;
+  width: 100vw;
+  height: 50vw;
+  z-index: 3;
+
+  background-size: contain;
+}
+
+.backgroundBriks {
   background-image: url("../../public/images/staticImages/backgroundBriks.png");
-  position: absolute;
-  width: 100%;
-  height: 100%;
+
+  position: relative;
+  top: -50vw;
+  width: 100vw;
+  height: 50vw;
   opacity: 0.25;
   background-size: cover;
+
+  z-index: 4;
 }
 
-#backgroundFilter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.backgroundFilter {
+  position: relative;
+
+  top: -100vw;
+  width: 100vw;
+  height: 50vw;
   opacity: 1;
   background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.backgroundFILL {
+  top: -150vw;
+  position: relative;
+  height: 100%;
+}
+.backgroundSolidColorFILL {
+  background-image: url("../../public/images/staticImages/backgroundSolidColor.png");
+
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+
+  background-size: contain;
+}
+
+.backgroundBriksFILL {
+  background-image: url("../../public/images/staticImages/backgroundBriks.png");
+  position: relative;
+
+  top: -100vh;
+  width: 100vw;
+  height: 100%;
+  opacity: 0.25;
+  background-size: contain;
+  background-repeat: repeat;
+  z-index: 1;
+}
+
+.backgroundFilterFILL {
+  position: relative;
+
+  top: -200vh;
+  width: 100vw;
+  height: 100%;
+  opacity: 1;
+  background-size: contain;
+  background-repeat: repeat;
+
+  z-index: 2;
 }
