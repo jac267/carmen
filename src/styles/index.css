@@ -1,5 +1,6 @@
 #homePage {
   height: 100vh;
+  overflow-y: hidden;
 }
 #homePageMenu {
   top: -50px;
@@ -7,19 +8,149 @@
   width: 100%;
   position: absolute;
   z-index: 10;
-}
 
+  display: grid;
+  grid-template-columns: repeat(40, 2.5vw);
+  grid-template-rows: repeat(26, 2vw);
+}
+#homePageMenu img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .neon-icon {
   border-style: none;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(1, 1, 1, 0);
-  align-items: center;
 }
 
 .neon-icon > img {
+  height: 14vw;
+  width: 13vw;
+  object-fit: contain;
+}
+
+.menu-button-div {
+  align-self: center;
+}
+
+.menu-button {
+  border-style: none;
+
+  background-repeat: no-repeat;
+
+  background-color: rgba(1, 1, 1, 0);
+  align-items: center;
+}
+
+.menu-button-div {
+  height: 19vw;
+  width: 17vw;
+
+  user-select: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#cheque {
   height: 17vw;
   width: 16vw;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+#neonStonks {
+  grid-column-start: 30;
+  grid-column-end: 32;
+  grid-row-end: 20;
+  grid-row-start: 22;
+}
+#neonCalculet {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-end: 18;
+  grid-row-start: 21;
+}
+#neonMoney {
+  grid-column-start: 32;
+  grid-column-end: 34;
+  grid-row-end: 6;
+  grid-row-start: 8;
+}
+#neonCrayon {
+  grid-column-start: 12;
+  grid-column-end: 14;
+  grid-row-end: 3;
+  grid-row-start: 5;
+}
+#cheque-div {
+  grid-column-start: 18;
+  grid-column-end: 22;
+  grid-row-end: 14;
+  grid-row-start: 18;
+}
+#apres-D-E-C {
+  position: relative;
+  right: 1.5vw;
+  top: 0.5vw;
+  grid-column-start: 23;
+  grid-column-end: 26;
+  grid-row-end: 13;
+  grid-row-start: 17;
+}
+#apres-D-E-C {
+  height: 16vw;
+  width: 15vw;
+}
+#partir-une-entreprise {
+  grid-column-start: 27;
+  grid-column-end: 27;
+  grid-row-end: 14;
+  grid-row-start: 20;
+}
+#les-concepts-complexes {
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-end: 16;
+  grid-row-start: 21;
+}
+#suite-office {
+  position: relative;
+  bottom: 0.5vw;
+  right: 1vw;
+  grid-column-start: 18;
+  grid-column-end: 24;
+  grid-row-end: 20;
+  grid-row-start: 23;
+}
+#suite-office {
+  height: 22vw;
+  width: 20vw;
+}
+#les-bases {
+  position: relative;
+  bottom: 0.5vw;
+  right: 0.75vw;
+  grid-column-start: 18;
+  grid-column-end: 22;
+  grid-row-end: 13;
+  grid-row-start: 16;
+}
+#finances-personelles {
+  position: relative;
+  right: 1vw;
+  bottom: 0.5vw;
+  grid-column-start: 16;
+  grid-column-end: 22;
+  grid-row-end: 13;
+  grid-row-start: 18;
+}
+
+#finances-personelles {
+  height: 16vw;
+  width: 16vw;
 }
