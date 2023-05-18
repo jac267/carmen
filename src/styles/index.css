@@ -2,12 +2,24 @@
   height: 100vh;
 }
 #homePageMenu {
-  position: relative;
-  top: -50vw;
+  top: -50px;
+  height: 50vw;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
 }
 
 .neon-icon {
+  border-style: none;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(1, 1, 1, 0);
+  align-items: center;
+}
+
+.neon-icon > img {
+  height: 17vw;
+  width: 16vw;
+  object-fit: cover;
 }
