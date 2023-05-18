@@ -29,33 +29,33 @@ function Home() {
         </div>
         <MenuButton
           backgroundImage="url('../public/images/staticImages/l’APRÈS D.E.C..png')"
-          nbSpam="6"
+          nbSpam="2"
           id="apres-D-E-C"
         />
 
         <MenuButton
           backgroundImage="url('../public/images/staticImages/PARTIR UNE ENTREPRISE.png')"
-          nbSpam="4"
+          nbSpam="2"
           id="partir-une-entreprise"
         />
         <MenuButton
           backgroundImage="url('../public/images/staticImages/LES CONCEPTS COMPLEXES.png')"
-          nbSpam="5"
+          nbSpam="1"
           id="les-concepts-complexes"
         />
         <MenuButton
           backgroundImage="url('../public/images/staticImages/SUITE OFFICE.png')"
-          nbSpam="9"
+          nbSpam="3"
           id="suite-office"
         />
         <MenuButton
           backgroundImage="url('../public/images/staticImages/LES BASES.png')"
-          nbSpam="8"
+          nbSpam="3"
           id="les-bases"
         />
         <MenuButton
           backgroundImage="url('../public/images/staticImages/FINANCES PERSO- NELLES.png')"
-          nbSpam="8"
+          nbSpam="1"
           id="finances-personelles"
         />
       </div>
@@ -77,7 +77,13 @@ function MenuButton(params) {
       id={params.id}
       style={{ backgroundImage: params.backgroundImage }}
     >
-      <button class="menu-button" onClick={() => alert(params.id)}></button>
+      <div></div>
+      {createMenuButton(params.nbSpam).map((spam) => (
+        <button
+          class={"a" + spam.props.class}
+          onClick={() => alert(params.id)}
+        ></button>
+      ))}
     </div>
   );
 }

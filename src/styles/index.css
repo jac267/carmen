@@ -3,7 +3,7 @@
   overflow-y: hidden;
 }
 #homePageMenu {
-  top: -50px;
+  top: -30px;
   height: 50vw;
   width: 100%;
   position: absolute;
@@ -55,14 +55,22 @@
   user-select: none;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 10;
+}
+.menu-button-div > button {
+  background-color: rgba(1, 1, 1, 0);
+  border-color: rgba(1, 1, 1, 0);
 }
 
 #cheque {
   height: 17vw;
   width: 16vw;
   object-fit: contain;
+  z-index: 9;
 }
-
+#cheque-div {
+  z-index: 9;
+}
 #neonStonks {
   grid-column-start: 30;
   grid-column-end: 32;
@@ -106,17 +114,66 @@
   height: 16vw;
   width: 15vw;
 }
+#apres-D-E-C .a0 {
+  position: relative;
+  left: 2vw;
+  top: -1vw;
+
+  height: 10vw;
+  width: 5vw;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+#apres-D-E-C .a1 {
+  position: relative;
+  left: 0vw;
+  top: 1vw;
+
+  height: 13vw;
+  width: 5vw;
+  border-bottom-left-radius: 25px;
+}
+
 #partir-une-entreprise {
   grid-column-start: 27;
   grid-column-end: 27;
   grid-row-end: 14;
   grid-row-start: 20;
 }
+#partir-une-entreprise .a0 {
+  position: relative;
+  left: 5vw;
+  top: 1vw;
+
+  height: 9.5vw;
+  width: 7vw;
+  transform: rotate(0deg);
+  border-radius: 100px;
+}
+#partir-une-entreprise .a1 {
+  position: relative;
+  left: 2vw;
+  top: -6vw;
+
+  height: 4vw;
+  width: 13vw;
+  transform: rotate(180deg);
+  border-radius: 100px;
+}
 #les-concepts-complexes {
   grid-column-start: 9;
   grid-column-end: 12;
   grid-row-end: 16;
   grid-row-start: 21;
+}
+#les-concepts-complexes .a0 {
+  position: relative;
+  left: 1vw;
+  top: 1vw;
+  height: 5vw;
+  width: 15vw;
+  border-top-left-radius: 25px;
+  transform: rotate(180deg);
 }
 #suite-office {
   position: relative;
@@ -127,18 +184,73 @@
   grid-row-end: 20;
   grid-row-start: 23;
 }
+#suite-office .a0 {
+  position: relative;
+  left: 2vw;
+  top: 2vw;
+  height: 7vw;
+  width: 8vw;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+#suite-office .a1 {
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 7vw;
+  width: 8vw;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 10px;
+}
+#suite-office .a2 {
+  position: relative;
+  left: 0vw;
+  top: -1vw;
+  height: 3vw;
+  width: 2vw;
+  border-top-right-radius: 100px;
+}
 #suite-office {
   height: 22vw;
   width: 20vw;
 }
 #les-bases {
   position: relative;
-  bottom: 0.5vw;
-  right: 0.75vw;
+  bottom: 1.15vw;
+
   grid-column-start: 18;
   grid-column-end: 22;
-  grid-row-end: 13;
+  grid-row-end: 10;
   grid-row-start: 16;
+
+  min-width: 17vw;
+  height: 10vw;
+}
+#les-bases .a0 {
+  position: relative;
+  left: 1.5vw;
+  top: 1vw;
+  height: 4vw;
+  width: 14vw;
+  border-bottom-right-radius: 10px;
+}
+#les-bases .a1 {
+  position: relative;
+  top: -3vw;
+  left: 3vw;
+  height: 6vw;
+  width: 5vw;
+  transform: rotate(35deg);
+  border-bottom-right-radius: 10px;
+}
+#les-bases .a2 {
+  position: relative;
+  top: -2.5vw;
+  left: 3.75vw;
+  height: 6vw;
+  width: 5vw;
+  transform: rotate(35deg);
 }
 #finances-personelles {
   position: relative;
@@ -149,7 +261,15 @@
   grid-row-end: 13;
   grid-row-start: 18;
 }
-
+#finances-personelles .a0 {
+  position: relative;
+  left: 1.5vw;
+  top: 1vw;
+  height: 13vw;
+  width: 8vw;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 30px;
+}
 #finances-personelles {
   height: 16vw;
   width: 16vw;
