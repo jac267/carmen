@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+}
+
+#backgroundSolidColor {
+  background-image: url("../../public/images/staticImages/backgroundSolidColor.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#backgroundBriks {
+  background-image: url("../../public/images/staticImages/backgroundBriks.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background-size: cover;
+}
+
+#backgroundFilter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-size: cover;
+}
