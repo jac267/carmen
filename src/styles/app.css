@@ -1,10 +1,12 @@
 body {
   margin: 0px;
   /* Hide scrollbars */
+  min-width: 200px;
 }
 
 .background {
   height: 100%;
+  min-width: 200px;
 }
 .backgroundSolidColor {
   background-image: url("../../public/images/staticImages/backgroundSolidColor.png");
@@ -17,11 +19,12 @@ body {
   z-index: 3;
 
   background-size: contain;
+  min-width: 200px;
 }
 
 .backgroundBriks {
   background-image: url("../../public/images/staticImages/backgroundBriks.png");
-
+  min-width: 200px;
   position: relative;
   top: -50vw;
   left: -2%;
@@ -35,7 +38,7 @@ body {
 
 .backgroundFilter {
   position: relative;
-
+  min-width: 200px;
   top: -100vw;
   width: 100vw;
   height: 50vw;
@@ -46,13 +49,14 @@ body {
 }
 
 .backgroundFILL {
+  min-width: 200px;
   top: -150vw;
   position: relative;
   height: 100%;
 }
 .backgroundSolidColorFILL {
   background-image: url("../../public/images/staticImages/backgroundSolidColor.png");
-
+  min-width: 200px;
   width: 100vw;
   height: 100%;
   z-index: 0;
@@ -63,7 +67,7 @@ body {
 .backgroundBriksFILL {
   background-image: url("../../public/images/staticImages/backgroundBriks.png");
   position: relative;
-
+  min-width: 200px;
   top: -100vh;
   left: -2%;
   width: 100vw;
@@ -76,7 +80,7 @@ body {
 
 .backgroundFilterFILL {
   position: relative;
-
+  min-width: 200px;
   top: -200vh;
   width: 100vw;
   height: 100%;

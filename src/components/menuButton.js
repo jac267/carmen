@@ -11,18 +11,16 @@ function createMenuButton(nb) {
   return output;
 }
 
-document.addEventListener(
+document.getElementById("root").addEventListener(
   "mousemove",
   (e) => {
     element = document.elementFromPoint(e.clientX, e.clientY);
 
     display = element.style.display;
-    console.log(element.nodeName);
-    if (element.nodeName == "DIV") {
-      element.style.display = "none";
 
+    if (element.nodeName == "DIV") {
       element2 = document.elementFromPoint(e.clientX, e.clientY);
-      console.log(element2.id);
+
       if (element2.nodeName == "BUTTON") {
         element.style.zIndex = 10;
 

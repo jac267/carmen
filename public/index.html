@@ -10,18 +10,32 @@
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
+    <!-- fa fa font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <script src="../src/components/menuButton.js"></script>
+    <script src="../src/components/footerScroll.js"></script>
 
     <link rel="stylesheet" href="../src/styles/app.css" />
     <link rel="stylesheet" href="../src/styles/index.css" />
+    <link rel="stylesheet" href="../src/styles/footer.css" />
     <title>Acceuil</title>
   </head>
-  <body>
+  <body wheel="scrolled()">
     <div id="root"></div>
     <script type="text/babel" src="../src/components/app.js"></script>
     <script type="text/babel" src="../src/components/index.js"></script>
     <script type="text/babel">
       ReactDOM.render(<Home />, document.getElementById("root"));
+    </script>
+
+    <div id="footer"></div>
+    <script type="text/babel" src="../src/components/footer.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(<Footer a="d" />, document.getElementById("footer"));
     </script>
   </body>
 </html>

@@ -5,7 +5,6 @@ function Home() {
         backgroundImage="url('../public/images/staticImages/backgroundPurpleFilter.png')"
         backgroundColor="rgba(9, 9, 25, 0.8)"
       />
-
       <div id="homePageMenu">
         <NeonIcon
           backgroundImage="../public/images/staticImages/neonCrayon.png"
